@@ -1,0 +1,41 @@
+.form {
+  background: $black-color;
+  padding: 1.875rem 4.75rem;
+  border-radius: 3.125rem;
+  margin-top: 2.25rem;
+  &__group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding: 1.5rem 0;
+    &--btn {
+      padding: 0;
+      margin-top: 3rem;
+      margin-bottom: 0;
+      align-items: center;
+    }
+  }
+  &__label {
+    position: absolute;
+    top: 0;
+    color: $white-color;
+    transform: translateY(60%);
+    transition: all 0.5s;
+  }
+  &__input {
+    border: none;
+    border-bottom: 3px solid $white-color;
+    background: none;
+    font-size: 1.2rem;
+    color: $white-color;
+    font-family: inherit;
+    padding: 0 0.5rem;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__input:focus + &__label {
+    transform: translateY(-60%);
+  }
+}

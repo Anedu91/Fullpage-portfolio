@@ -8,15 +8,248 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <main id="fullpage">
-      <section class="section">
-        <div class="slide home" data-anchor="slide1">1</div>
-        <div class="slide skills" data-anchor="slide2">2</div>
-        <div class="slide portfolio" data-anchor="slide3">3</div>
-        <div class="slide contact" data-anchor="slide4">4</div>
-      </section>
-      <section class="section">2</section>
-    </main>
+    <div class="app">
+      <header class="header">
+        <figure>
+          <img src="images/logo.svg" alt="Logo" />
+        </figure>
+      </header>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">hello.</li>
+          <li class="nav__item">skills.</li>
+          <li class="nav__item">portfolio.</li>
+          <li class="nav__item">contact.</li>
+        </ul>
+      </nav>
+      <main id="fullpage">
+        <section class="section">
+          <div class="slide home" data-anchor="home">
+            <div class="container container--row">
+              <ul class="social">
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg class="social__icon">
+                      <use xlink:href="images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg class="social__icon">
+                      <use xlink:href="images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg class="social__icon">
+                      <use xlink:href="images/sprite.svg#dribbble"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg class="social__icon">
+                      <use xlink:href="images/sprite.svg#behance"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <article class="home__article">
+                <h1 class="heading-1">I'm marc banchs.</h1>
+                <h3 class="heading-3">UX/UI designer, maker, dreamer</h3>
+                <p class="home__paragraph paragraph">
+                  I'm spending my time cooking Sushi and designing cool stuff at
+                  Zomato. When I'm not designing, I love to write code for
+                  designers and developers. Please don't explore this portfolio
+                  as it contains some of my best works.
+                </p>
+                <div class="home__buttons">
+                  <a href="#" class="btn">download cv.</a>
+                  <button class="btn">contact me.</button>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="slide skills" data-anchor="skills">
+            <div class="container container--column">
+              <h2 class="heading-2 heading-container">skills.</h2>
+              <div class="skills__container">
+                <ul class="skills__list">
+                  <li class="skills__item">
+                    <button class="skills__btn active" data-progress="90">
+                      figma.
+                    </button>
+                  </li>
+                  <li class="skills__item">
+                    <button class="skills__btn" data-progress="70">
+                      adobe xd.
+                    </button>
+                  </li>
+                  <li class="skills__item">
+                    <button class="skills__btn" data-progress="10">
+                      invision.
+                    </button>
+                  </li>
+                  <li class="skills__item">
+                    <button class="skills__btn" data-progress="40">
+                      framer.
+                    </button>
+                  </li>
+                  <li class="skills__item">
+                    <button class="skills__btn" data-progress="100">
+                      html.
+                    </button>
+                  </li>
+                  <li class="skills__item">
+                    <button class="skills__btn" data-progress="25">css.</button>
+                  </li>
+                  <li class="skills__item">
+                    <button class="skills__btn" data-progress="0">
+                      javascript.
+                    </button>
+                  </li>
+                </ul>
+                <div class="skills__circle-container">
+                  <svg class="skills__circle" viewBox="0 0 120 120">
+                    <circle cx="50%" cy="50%" r="50"></circle>
+                    <circle
+                      id="progress"
+                      cx="50%"
+                      cy="50%"
+                      r="50"
+                      stroke-dashoffset="100.5"
+                      stroke-dasharray="314"
+                    ></circle>
+                  </svg>
+                  <div class="skills__number">
+                    <h4><span id="progressValue">90</span>%</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide portfolio" data-anchor="portfolio">
+            <div class="container container--column">
+              <h2 class="heading-2 heading-container">portfolio.</h2>
+              <div class="portfolio__container">
+                <p class="portfolio__sub-heading">
+                  I put my heart and soul in these project. Now that you're on
+                  this page, fell free to explore.
+                </p>
+                <div class="portfolio__grid">
+                  <a href="#" class="portfolio__item">
+                    <div class="portfolio__figure">
+                      <div class="portfolio__image"></div>
+                    </div>
+                    <p class="portfolio__text">
+                      Progrecity <br />
+                      2020
+                    </p>
+                  </a>
+                  <a href="#" class="portfolio__item">
+                    <div class="portfolio__figure">
+                      <div class="portfolio__image"></div>
+                    </div>
+                    <p class="portfolio__text">
+                      Progrecity <br />
+                      2020
+                    </p>
+                  </a>
+                  <a href="#" class="portfolio__item">
+                    <div class="portfolio__figure">
+                      <div class="portfolio__image"></div>
+                    </div>
+                    <p class="portfolio__text">
+                      Progrecity <br />
+                      2020
+                    </p>
+                  </a>
+                  <a href="#" class="portfolio__item">
+                    <div class="portfolio__figure">
+                      <div class="portfolio__image"></div>
+                    </div>
+                    <p class="portfolio__text">
+                      Progrecity <br />
+                      2020
+                    </p>
+                  </a>
+                  <a href="#" class="portfolio__item">
+                    <div class="portfolio__figure">
+                      <div class="portfolio__image"></div>
+                    </div>
+                    <p class="portfolio__text">
+                      Progrecity <br />
+                      2020
+                    </p>
+                  </a>
+                  <a href="#" class="portfolio__item">
+                    <div class="portfolio__figure">
+                      <div class="portfolio__image"></div>
+                    </div>
+                    <p class="portfolio__text">
+                      Progrecity <br />
+                      2020
+                    </p>
+                  </a>
+                  <a href="#" class="portfolio__item">
+                    <div class="portfolio__figure">
+                      <div class="portfolio__image"></div>
+                    </div>
+                    <p class="portfolio__text">
+                      Progrecity <br />
+                      2020
+                    </p>
+                  </a>
+                  <a href="#" class="portfolio__item">
+                    <div class="portfolio__figure">
+                      <div class="portfolio__image"></div>
+                    </div>
+                    <p class="portfolio__text">
+                      Progrecity <br />
+                      2020
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide contact" data-anchor="contact">
+            <div class="container container--column">
+              <h2 class="heading-2 heading-container">contact.</h2>
+              <div class="contact__container">
+                <ul class="contact__list">
+                  <li class="contact__item">
+                    <strong>Email:</strong> marcbanchsux@gmail.com
+                  </li>
+                  <li class="contact__item">
+                    <strong>Location:</strong> Barcelona, Spain
+                  </li>
+                </ul>
+                <form action="" class="form">
+                  <div class="form__group">
+                    <input type="text" class="form__input" id="name" />
+                    <label for="name" class="form__label">Name</label>
+                  </div>
+                  <div class="form__group">
+                    <input type="email" class="form__input" id="email" />
+                    <label for="email" class="form__label">Email</label>
+                  </div>
+                  <div class="form__group">
+                    <input type="text" class="form__input" id="message" />
+                    <label for="message" class="form__label">Message</label>
+                  </div>
+                  <div class="form__group form__group--btn">
+                    <button class="btn btn--contact">send</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
     <script src="js/vendors/fullpage.extensions.min.js"></script>
     <script src="js/app.js"></script>
   </body>

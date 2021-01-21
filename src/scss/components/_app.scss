@@ -1,0 +1,156 @@
+.app {
+  position: relative;
+}
+.home {
+  background: $gray-color;
+  &__article {
+    margin-left: 6.5rem;
+    max-width: 53.125rem;
+  }
+  &__buttons {
+    margin-top: 1.875rem;
+    & > *:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+  &__paragraph {
+    margin-top: 1.25rem;
+    max-width: 42.125rem;
+  }
+}
+.skills {
+  background: $black-color;
+  color: $white-color;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 60.625rem;
+    width: 100%;
+    margin-top: 2.25rem;
+  }
+  &__list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+  }
+  &__btn {
+    font-family: inherit;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    background: none;
+    border: none;
+    color: $white-color;
+    cursor: pointer;
+    &:hover {
+      font-weight: 600;
+    }
+    &:focus {
+      outline: none;
+    }
+    &.active {
+      font-weight: 600;
+    }
+  }
+  &__circle-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 4.6875rem;
+  }
+  &__circle {
+    position: relative;
+    width: 16.75rem;
+    height: 16.75rem;
+    z-index: 1000;
+    circle {
+      width: 100%;
+      height: 100%;
+      fill: none;
+      stroke: rgba(180, 180, 180, 0.4);
+      stroke-width: 5;
+      stroke-linecap: round;
+      transition: stroke-dashoffset 0.35s;
+      transform: rotate(-90deg);
+      transform-origin: 50% 50%;
+    }
+    circle:nth-child(2) {
+      stroke: #b4b4b4;
+      stroke-width: 15;
+    }
+  }
+  &__number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    h4 {
+      font-size: 2.125rem;
+      line-height: 1.5;
+      font-weight: 700;
+    }
+  }
+}
+.portfolio {
+  background: $black-color;
+  color: $white-color;
+  &__container {
+    max-width: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.25rem;
+  }
+  &__sub-heading {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 4.375rem;
+    grid-row-gap: 3.125rem;
+    margin-top: 2.375rem;
+  }
+  &__item {
+    max-width: 8.125rem;
+    text-decoration: none;
+  }
+  &__figure {
+    margin-bottom: 1rem;
+  }
+  &__image {
+    width: 100%;
+    height: 8.125rem;
+    background: $white-color;
+    border-radius: 0.6rem;
+  }
+  &__text {
+    text-align: center;
+    color: $white-color;
+  }
+}
+.contact {
+  background: $gray-color;
+
+  &__container {
+    max-width: 53.625rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3.125rem;
+  }
+  &__list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__item {
+    position: relative;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+}

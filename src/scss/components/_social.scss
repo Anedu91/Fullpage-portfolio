@@ -1,0 +1,22 @@
+.social {
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+  padding: 1.875rem 1.25rem;
+  border: 3px solid $black-color;
+  border-radius: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 1.75rem;
+    }
+  }
+  &__link {
+  }
+  &__icon {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+}

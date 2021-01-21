@@ -2,3 +2,55 @@
 body {
   font-family: $primary-font;
 }
+.heading-1 {
+  font-size: 5.9375rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.heading-2 {
+  font-size: 3.125rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.heading-3 {
+  font-size: 3.125rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.heading-container {
+  margin-top: 1.75rem;
+}
+.paragraph {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.btn {
+  padding: 0.65rem 1.875rem;
+  background: $black-color;
+  border: 3px solid $black-color;
+  border-radius: 1.875rem;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: $white-color;
+  text-decoration: none;
+  font-family: inherit;
+  transition: 0.5s all;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    background: $gray-color;
+    color: $black-color;
+  }
+  &--contact {
+    border-color: $white-color;
+    padding: 0.65rem 2.875rem;
+    &:hover {
+      border-color: $black-color;
+    }
+  }
+}

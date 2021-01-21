@@ -1,0 +1,23 @@
+.nav {
+  position: fixed;
+  bottom: 3rem;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  &__list {
+    display: flex;
+    list-style: none;
+    padding: 1.125rem 2.25rem;
+    border: 3px solid $black-color;
+    border-radius: 1.875rem;
+    background: $gray-color;
+  }
+  &__item {
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+    &:hover {
+      font-weight: 600;
+    }
+  }
+}
