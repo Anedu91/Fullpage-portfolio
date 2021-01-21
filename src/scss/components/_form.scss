@@ -1,19 +1,32 @@
 .form {
   background: $black-color;
-  padding: 1.875rem 4.75rem;
+  padding: 1rem 1.75rem;
   border-radius: 3.125rem;
   margin-top: 2.25rem;
+  @include respond-below(xxxs) {
+    margin-top: 1rem;
+  }
+  @include respond-above(sm) {
+    padding: 1.875rem 4.75rem;
+  }
   &__group {
     position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
     padding: 1.5rem 0;
+    @include respond-below(xxxs) {
+      padding: 0.75rem 0;
+      margin-bottom: 0.75rem;
+    }
     &--btn {
       padding: 0;
       margin-top: 3rem;
       margin-bottom: 0;
       align-items: center;
+      @include respond-below(xxxs) {
+        margin-top: 1.5rem;
+      }
     }
   }
   &__label {
@@ -22,6 +35,9 @@
     color: $white-color;
     transform: translateY(60%);
     transition: all 0.5s;
+    @include respond-below(xxxs) {
+      font-size: 0.8rem;
+    }
   }
   &__input {
     border: none;

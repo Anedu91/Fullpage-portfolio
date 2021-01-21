@@ -1,22 +1,37 @@
 .social {
   list-style: none;
   position: absolute;
-  top: 50%;
-  transform: translate3d(0, -50%, 0);
-  padding: 1.875rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   border: 3px solid $black-color;
   border-radius: 1.875rem;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  bottom: 2.2rem;
+  @include respond-below(xxxs) {
+    bottom: 1rem;
+  }
+  @include respond-above(sm) {
+    top: 50%;
+    bottom: unset;
+    transform: translate3d(0, -50%, 0);
+    flex-direction: column;
+    padding: 1.875rem 1.25rem;
+  }
   &__item {
     &:not(:last-child) {
-      margin-bottom: 1.75rem;
+      margin-right: 1.75rem;
+      @include respond-above(sm) {
+        margin-bottom: 1.75rem;
+        margin-right: 0;
+      }
     }
-  }
-  &__link {
   }
   &__icon {
     width: 1.125rem;
     height: 1.125rem;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
   }
 }

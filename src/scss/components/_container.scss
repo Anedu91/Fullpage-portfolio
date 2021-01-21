@@ -1,7 +1,15 @@
 .container {
-  padding: 4.5rem;
+  padding: 3rem 3.75vw;
   height: 100%;
   position: relative;
+  @include respond-above(sm) {
+    padding: 8vh 3.75vw;
+  }
+  @include respond-above(xl) {
+    @media (max-height: 800px) {
+      padding: 4vh 3.75vw;
+    }
+  }
   &--row {
     display: flex;
     flex-direction: row;

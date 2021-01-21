@@ -16,7 +16,7 @@ $breakpoints: (
   // 1200px
   xl: 1440px,
   // 1440px
-  xxl: 1600px // 1600px,,,,
+  xxl: 1600px // 1600px,,,,,
 );
 
 @mixin respond-below($breakpoint) {
@@ -27,7 +27,7 @@ $breakpoints: (
       $breakpoints,
       $breakpoint
     ); // Write the media query.
-    @media (max-width: ($breakpoint-value - 1)) {
+    @media (max-width: ($breakpoint-value + 1)) {
       @content;
     }
     // If the breakpoint doesn't exist in the map.

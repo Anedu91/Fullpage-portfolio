@@ -5,17 +5,27 @@
   -ms-user-select: none; /* IE10+ */
   position: absolute;
   z-index: 4;
-  top: 50%;
+  bottom: 0%;
   cursor: pointer;
-  width: 5.25rem;
-  height: 5.25rem;
+  width: clamp(3.75rem, 4.375vw, 5.25rem);
+  height: clamp(3.75rem, 4.375vw, 5.25rem);
   border-style: solid;
   border-radius: 50%;
   border: 3px solid $gray-color;
   transform: translate3d(0, -50%, 0);
-
+  transition: 0.5 all;
+  @include respond-below(xxxs) {
+    width: 2rem;
+    height: 2rem;
+  }
+  @include respond-above(sm) {
+    bottom: 2%;
+  }
+  @include respond-above(md) {
+    top: 50%;
+  }
   &.fp-prev {
-    left: 5.25rem;
+    left: 3.75vw;
     &:before {
       content: "";
       position: absolute;
@@ -27,10 +37,19 @@
       background-position: center;
       border-radius: 50%;
       transform: rotate(180deg);
+      transition: 0.5s all;
+      @include respond-below(xxxs) {
+        background-size: 70%;
+      }
+    }
+    &:hover {
+      &:before {
+        background-position: 80% center;
+      }
     }
   }
   &.fp-next {
-    right: 5.25rem;
+    right: 3.75vw;
     &:before {
       content: "";
       position: absolute;
@@ -41,6 +60,15 @@
       background-repeat: no-repeat;
       background-position: center;
       border-radius: 50%;
+      transition: 0.5s all;
+      @include respond-below(xxxs) {
+        background-size: 70%;
+      }
+    }
+    &:hover {
+      &:before {
+        background-position: 80% center;
+      }
     }
   }
 }

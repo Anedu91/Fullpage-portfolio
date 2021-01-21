@@ -3,6 +3,10 @@
   bottom: 3rem;
   left: 50%;
   transform: translate3d(-50%, 0, 0);
+  display: none;
+  @include respond-above(sm) {
+    display: block;
+  }
   &__list {
     display: flex;
     list-style: none;

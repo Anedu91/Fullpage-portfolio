@@ -11,7 +11,7 @@
     <div class="app">
       <header class="header">
         <figure>
-          <img src="images/logo.svg" alt="Logo" />
+          <img src="images/logo.svg" alt="Logo" class="header__logo" />
         </figure>
       </header>
       <nav class="nav">
@@ -140,36 +140,52 @@
                 </p>
                 <div class="portfolio__grid">
                   <a href="#" class="portfolio__item">
-                    <div class="portfolio__figure">
-                      <div class="portfolio__image"></div>
-                    </div>
+                    <figure class="portfolio__figure">
+                      <img
+                        src="images/portfolio.jpg"
+                        alt="Test"
+                        class="portfolio__image"
+                      />
+                    </figure>
                     <p class="portfolio__text">
                       Progrecity <br />
                       2020
                     </p>
                   </a>
                   <a href="#" class="portfolio__item">
-                    <div class="portfolio__figure">
-                      <div class="portfolio__image"></div>
-                    </div>
+                    <figure class="portfolio__figure">
+                      <img
+                        src="images/portfolio.jpg"
+                        alt="Test"
+                        class="portfolio__image"
+                      />
+                    </figure>
                     <p class="portfolio__text">
                       Progrecity <br />
                       2020
                     </p>
                   </a>
                   <a href="#" class="portfolio__item">
-                    <div class="portfolio__figure">
-                      <div class="portfolio__image"></div>
-                    </div>
+                    <figure class="portfolio__figure">
+                      <img
+                        src="images/portfolio.jpg"
+                        alt="Test"
+                        class="portfolio__image"
+                      />
+                    </figure>
                     <p class="portfolio__text">
                       Progrecity <br />
                       2020
                     </p>
                   </a>
                   <a href="#" class="portfolio__item">
-                    <div class="portfolio__figure">
-                      <div class="portfolio__image"></div>
-                    </div>
+                    <figure class="portfolio__figure">
+                      <img
+                        src="images/portfolio.jpg"
+                        alt="Test"
+                        class="portfolio__image"
+                      />
+                    </figure>
                     <p class="portfolio__text">
                       Progrecity <br />
                       2020
@@ -221,10 +237,20 @@
               <div class="contact__container">
                 <ul class="contact__list">
                   <li class="contact__item">
-                    <strong>Email:</strong> marcbanchsux@gmail.com
+                    <span class="contact__icon-container">
+                      <svg class="contact__icon">
+                        <use xlink:href="images/sprite.svg#mail"></use>
+                      </svg>
+                    </span>
+                    <strong>Email:</strong>&nbsp; marcbanchsux@gmail.com
                   </li>
                   <li class="contact__item">
-                    <strong>Location:</strong> Barcelona, Spain
+                    <span class="contact__icon-container">
+                      <svg class="contact__icon">
+                        <use xlink:href="images/sprite.svg#location"></use>
+                      </svg>
+                    </span>
+                    <strong>Location:</strong>&nbsp; Barcelona, Spain
                   </li>
                 </ul>
                 <form action="" class="form">
