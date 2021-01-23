@@ -22,6 +22,7 @@
           <li class="nav__item">contact.</li>
         </ul>
       </nav>
+      <div id="circle"></div>
       <main id="fullpage">
         <section class="section">
           <div class="slide home" data-anchor="home">
@@ -67,7 +68,7 @@
                 </p>
                 <div class="home__buttons">
                   <a href="#" class="btn">download cv.</a>
-                  <button class="btn">contact me.</button>
+                  <button class="btn" id="contact">contact me.</button>
                 </div>
               </article>
             </div>
@@ -119,7 +120,6 @@
                       cx="50%"
                       cy="50%"
                       r="50"
-                      stroke-dashoffset="100.5"
                       stroke-dasharray="314"
                     ></circle>
                   </svg>
@@ -255,15 +255,15 @@
                 </ul>
                 <form action="" class="form">
                   <div class="form__group">
-                    <input type="text" class="form__input" id="name" />
+                    <input type="text" class="form__input" id="name" required/>
                     <label for="name" class="form__label">Name</label>
                   </div>
                   <div class="form__group">
-                    <input type="email" class="form__input" id="email" />
+                    <input type="email" class="form__input" id="email" required/>
                     <label for="email" class="form__label">Email</label>
                   </div>
                   <div class="form__group">
-                    <input type="text" class="form__input" id="message" />
+                    <input type="text" class="form__input" id="message" required/>
                     <label for="message" class="form__label">Message</label>
                   </div>
                   <div class="form__group form__group--btn">

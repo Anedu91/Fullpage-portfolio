@@ -15,7 +15,7 @@
     bottom: unset;
     transform: translate3d(0, -50%, 0);
     flex-direction: column;
-    padding: 1.875rem 1.25rem;
+    padding: 1.875rem 1rem;
   }
   &__item {
     &:not(:last-child) {
@@ -29,9 +29,13 @@
   &__icon {
     width: 1.125rem;
     height: 1.125rem;
+    transition: .5s all;
   }
   &__link {
     display: flex;
     align-items: center;
+  }
+  &__link:hover &__icon{
+    transform: scale(1.2);
   }
 }

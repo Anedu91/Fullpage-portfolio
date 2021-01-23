@@ -39,6 +39,9 @@ body {
 }
 .heading-container {
   margin-top: 1.75rem;
+  @include respond-above(sm){
+    margin-top: 0;
+  }
   @include respond-below(xxxs) {
     margin-top: 0;
   }
@@ -50,7 +53,7 @@ body {
 }
 
 .btn {
-  padding: 0.65rem 1.875rem;
+  padding: 0.55rem 2.5rem;
   background: $black-color;
   border: 3px solid $black-color;
   border-radius: 1.875rem;
