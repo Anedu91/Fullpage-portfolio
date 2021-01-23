@@ -714,7 +714,7 @@ body {
 @media (min-width: 1199px) {
   .header {
     top: 8vh;
-    left: 3.75vw;
+    left: calc(6.5rem + 3.75vw);
   }
 }
 .header__logo {
@@ -741,13 +741,16 @@ body {
 .nav__list {
   display: flex;
   list-style: none;
-  padding: 1.125rem 2.25rem;
+  padding: 0.75rem 2.25rem;
   border: 3px solid #0d0d0d;
   border-radius: 1.875rem;
   background: #b4b4b4;
 }
 .nav__item {
   cursor: pointer;
+}
+.nav__item.active {
+  font-weight: 700;
 }
 .nav__item:not(:last-child) {
   margin-right: 2rem;
@@ -803,11 +806,17 @@ body {
   height: 100%;
   background-color: #0d0d0d;
   background-image: url(../images/arrow.svg);
+  background-size: 35%;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
   transform: rotate(180deg);
   transition: 0.5s all;
+}
+@media (min-width: 767px) {
+  .fp-controlArrow.fp-prev:before {
+    background-size: 45%;
+  }
 }
 @media (max-width: 361px) {
   .fp-controlArrow.fp-prev:before {
@@ -827,10 +836,16 @@ body {
   height: 100%;
   background-color: #0d0d0d;
   background-image: url(../images/arrow.svg);
+  background-size: 35%;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
   transition: 0.5s all;
+}
+@media (min-width: 767px) {
+  .fp-controlArrow.fp-next:before {
+    background-size: 45%;
+  }
 }
 @media (max-width: 361px) {
   .fp-controlArrow.fp-next:before {
@@ -862,7 +877,7 @@ body {
     bottom: unset;
     transform: translate3d(0, -50%, 0);
     flex-direction: column;
-    padding: 1.875rem 1.25rem;
+    padding: 1.875rem 1rem;
   }
 }
 .social__item:not(:last-child) {
@@ -877,8 +892,12 @@ body {
 .social__icon {
   width: 1.125rem;
   height: 1.125rem;
+  transition: 0.5s all;
 }
 .social__link {
   display: flex;
   align-items: center;
+}
+.social__link:hover .social__icon {
+  transform: scale(1.2);
 }
