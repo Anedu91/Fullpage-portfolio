@@ -5,8 +5,14 @@
   background: $gray-color;
   &__article {
     max-width: 53.125rem;
+    margin-bottom: auto;
+    margin-top: 5rem;
+    @include respond-below(xxxs){
+      margin-top: auto;
+    }
     @include respond-above(sm) {
       margin-left: 6.5rem;
+      margin-bottom: 0;
     }
   }
   &__buttons {
@@ -44,8 +50,13 @@
     @include respond-above(md) {
       margin-top: 5rem;
     }
-    @include respond-above(lg) {
+    @include respond-above(lg){
       margin-top: 2.25rem;
+      max-width: 42.625rem;
+
+    }
+    @include respond-above(xl) {
+      max-width: 60.625rem;
     }
   }
   &__list {
@@ -60,7 +71,7 @@
   }
   &__item {
     &:not(:last-child) {
-      margin-right: 1rem;
+      margin-right: .5rem;
       @include respond-above(sm) {
         margin-right: 2rem;
       }
@@ -82,7 +93,10 @@
       font-size: 2rem;
       margin-bottom: 0;
     }
-    @include respond-above(lg) {
+    @include respond-above(lg){
+      font-size: 1.25rem;
+    }
+    @include respond-above(xl) {
       font-size: 1.75rem;
     }
     &:hover {
@@ -223,6 +237,12 @@
     @include respond-above(sm) {
       width: 8.125rem;
       height: 8.125rem;
+    }
+    @include respond-above(lg){
+      @media (max-height:800px){
+        width: 6.125rem;
+        height: 6.125rem;
+      }
     }
   }
   &__text {

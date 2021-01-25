@@ -13,7 +13,7 @@
   }
   @include respond-above(lg) {
     top: 8vh;
-    left: 3.75vw;
+    left: calc(6.5rem + 3.75vw);
   }
 
   &__logo {
