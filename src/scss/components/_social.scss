@@ -9,6 +9,9 @@
   bottom: 2.2rem;
   @include respond-below(xxxs) {
     bottom: 1rem;
+    @media (min-height: 570px) {
+      bottom: 1.8rem;
+    }
   }
   @include respond-above(sm) {
     top: 50%;
@@ -29,13 +32,13 @@
   &__icon {
     width: 1.125rem;
     height: 1.125rem;
-    transition: .5s all;
+    transition: 0.5s all;
   }
   &__link {
     display: flex;
     align-items: center;
   }
-  &__link:hover &__icon{
+  &__link:hover &__icon {
     transform: scale(1.2);
   }
 }

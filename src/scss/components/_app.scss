@@ -94,7 +94,6 @@
     background: none;
     border: none;
     color: $white-color;
-    cursor: pointer;
     margin-bottom: 1rem;
     @include respond-above(sm) {
       font-size: 2rem;
@@ -186,7 +185,7 @@
   color: $white-color;
   &__container {
     max-width: 45rem;
-    margin: auto;
+    margin-top: 1rem;
     @include respond-below(xxs) {
       @media (max-height: 736px) {
         margin-top: 0;
@@ -243,6 +242,9 @@
       max-width: 8.125rem;
     }
   }
+  &__item:hover &__text {
+    font-weight: 700;
+  }
   &__figure {
     margin-bottom: 0.5rem;
     @include respond-above(md) {
@@ -255,8 +257,8 @@
     }
   }
   &__image {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     background: $white-color;
     border-radius: 0.6rem;
     @include respond-below(xxs) {
@@ -298,7 +300,7 @@
   &__container {
     max-width: 50.625rem;
     width: 100%;
-    margin: auto;
+    margin: 1.5rem;
     @include respond-below(xxs) {
       @media (max-height: 667px) {
         margin: 0;

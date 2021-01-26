@@ -39,7 +39,7 @@ body {
 }
 .heading-container {
   margin-top: 1.75rem;
-  @include respond-above(sm){
+  @include respond-above(sm) {
     margin-top: 0;
   }
   @include respond-below(xxxs) {
@@ -57,7 +57,6 @@ body {
   background: $black-color;
   border: 3px solid $black-color;
   border-radius: 1.875rem;
-  cursor: pointer;
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 500;

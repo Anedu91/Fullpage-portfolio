@@ -77,4 +77,7 @@
   &__input:focus + &__label {
     transform: translateY(-60%);
   }
+  &__input:not(:placeholder-shown) + &__label {
+    transform: translateY(-60%);
+  }
 }
