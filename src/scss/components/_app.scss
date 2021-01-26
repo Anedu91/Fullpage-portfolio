@@ -125,6 +125,10 @@
     width: 53.75vw;
     height: 53.75vw;
     z-index: 1000;
+    @include respond-above(sm){
+      width: 43.75vw;
+    height: 43.75vw;
+    }
     @include respond-above(md) {
       width: 30.75rem;
       height: 30.75rem;
@@ -159,6 +163,9 @@
       line-height: 1.5;
       font-weight: 700;
       @include respond-above(sm) {
+        font-size: 4.125rem;
+      }
+      @include respond-above(md){
         font-size: 5.125rem;
       }
       @include respond-above(lg) {
@@ -224,6 +231,11 @@
     @include respond-above(md) {
       margin-bottom: 1rem;
     }
+    @include respond-above(lg){
+      @media (max-height:800px){
+        margin-bottom: .5rem;
+      }
+    }
   }
   &__image {
     width: 5rem;
@@ -240,8 +252,8 @@
     }
     @include respond-above(lg){
       @media (max-height:800px){
-        width: 6.125rem;
-        height: 6.125rem;
+        width: 5.725rem;
+        height: 5.725rem;
       }
     }
   }

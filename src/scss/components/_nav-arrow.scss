@@ -19,7 +19,7 @@
     height: 2rem;
   }
   @include respond-above(sm) {
-    bottom: 2%;
+    bottom: 0%;
   }
   @include respond-above(md) {
     top: 50%;

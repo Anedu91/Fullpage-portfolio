@@ -35,6 +35,11 @@
       @include respond-below(xxxs) {
         margin-top: 1.5rem;
       }
+      @include respond-above(lg){
+        @media (max-height:800px){
+          margin-top: 2rem;
+        }
+      }
     }
   }
   &__label {
