@@ -7,7 +7,12 @@
     max-width: 53.125rem;
     margin-bottom: auto;
     margin-top: 5rem;
-    @include respond-below(xxxs){
+    @include respond-below(xxs) {
+      @media (max-height: 667px) {
+        margin: auto;
+      }
+    }
+    @include respond-below(xxxs) {
       margin-top: auto;
     }
     @include respond-above(sm) {
@@ -29,6 +34,9 @@
     margin-top: 1.25rem;
     max-width: 42.125rem;
     font-size: 1.2rem;
+    @include respond-below(xxxs) {
+      font-size: 1rem;
+    }
     @include respond-above(lg) {
       font-size: 1rem;
     }
@@ -50,10 +58,9 @@
     @include respond-above(md) {
       margin-top: 5rem;
     }
-    @include respond-above(lg){
+    @include respond-above(lg) {
       margin-top: 2.25rem;
       max-width: 42.625rem;
-
     }
     @include respond-above(xl) {
       max-width: 60.625rem;
@@ -71,7 +78,7 @@
   }
   &__item {
     &:not(:last-child) {
-      margin-right: .5rem;
+      margin-right: 0.5rem;
       @include respond-above(sm) {
         margin-right: 2rem;
       }
@@ -93,7 +100,7 @@
       font-size: 2rem;
       margin-bottom: 0;
     }
-    @include respond-above(lg){
+    @include respond-above(lg) {
       font-size: 1.25rem;
     }
     @include respond-above(xl) {
@@ -125,9 +132,9 @@
     width: 53.75vw;
     height: 53.75vw;
     z-index: 1000;
-    @include respond-above(sm){
+    @include respond-above(sm) {
       width: 43.75vw;
-    height: 43.75vw;
+      height: 43.75vw;
     }
     @include respond-above(md) {
       width: 30.75rem;
@@ -165,7 +172,7 @@
       @include respond-above(sm) {
         font-size: 4.125rem;
       }
-      @include respond-above(md){
+      @include respond-above(md) {
         font-size: 5.125rem;
       }
       @include respond-above(lg) {
@@ -179,9 +186,13 @@
   color: $white-color;
   &__container {
     max-width: 45rem;
-
     margin: auto;
-
+    @include respond-below(xxs) {
+      @media (max-height: 736px) {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
     @include respond-above(lg) {
       margin-left: auto;
       margin-right: auto;
@@ -193,7 +204,7 @@
     line-height: 1.5;
     text-align: center;
     @include respond-below(xxxs) {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
     }
     @include respond-above(md) {
       font-size: clamp(1.3rem, 1.25vw, 1.5rem);
@@ -205,10 +216,16 @@
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
     margin-top: 2.375rem;
+    @include respond-below(xxs) {
+      @media (max-height: 736px) {
+        margin-top: 1.375rem;
+      }
+    }
     @include respond-below(xxxs) {
       margin-top: 0.375rem;
       grid-row-gap: 0.5rem;
     }
+
     @include respond-above(md) {
       grid-column-gap: clamp(1.375rem, 3.6vw, 4.375rem);
       grid-row-gap: clamp(1rem, 2.5vh, 3.125rem);
@@ -231,9 +248,9 @@
     @include respond-above(md) {
       margin-bottom: 1rem;
     }
-    @include respond-above(lg){
-      @media (max-height:800px){
-        margin-bottom: .5rem;
+    @include respond-above(lg) {
+      @media (max-height: 800px) {
+        margin-bottom: 0.5rem;
       }
     }
   }
@@ -242,6 +259,12 @@
     height: 5rem;
     background: $white-color;
     border-radius: 0.6rem;
+    @include respond-below(xxs) {
+      @media (max-height: 667px) {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
     @include respond-below(xxxs) {
       height: 4rem;
       width: 4rem;
@@ -250,8 +273,8 @@
       width: 8.125rem;
       height: 8.125rem;
     }
-    @include respond-above(lg){
-      @media (max-height:800px){
+    @include respond-above(lg) {
+      @media (max-height: 800px) {
         width: 5.725rem;
         height: 5.725rem;
       }
@@ -276,6 +299,11 @@
     max-width: 50.625rem;
     width: 100%;
     margin: auto;
+    @include respond-below(xxs) {
+      @media (max-height: 667px) {
+        margin: 0;
+      }
+    }
     @include respond-above(lg) {
       max-width: 53.625rem;
       margin-left: auto;

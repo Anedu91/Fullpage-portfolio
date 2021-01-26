@@ -3,6 +3,11 @@
   padding: 1rem 1.75rem;
   border-radius: 3.125rem;
   margin-top: 2.25rem;
+  @include respond-below(xxs) {
+    @media (max-height: 667px) {
+      margin-top: 1rem;
+    }
+  }
   @include respond-below(xxxs) {
     margin-top: 1rem;
   }
@@ -19,11 +24,11 @@
       padding: 0.75rem 0;
       margin-bottom: 0.75rem;
     }
-    @include respond-above(sm){
+    @include respond-above(sm) {
       padding: 1.5rem 0;
     }
-    @include respond-above(lg){
-      @media (max-height:800px){
+    @include respond-above(lg) {
+      @media (max-height: 800px) {
         padding: 1rem 0;
       }
     }
@@ -32,11 +37,16 @@
       margin-top: 3rem;
       margin-bottom: 0;
       align-items: center;
+      @include respond-below(xxs) {
+        @media (max-height: 667px) {
+          margin-top: 1.5rem;
+        }
+      }
       @include respond-below(xxxs) {
         margin-top: 1.5rem;
       }
-      @include respond-above(lg){
-        @media (max-height:800px){
+      @include respond-above(lg) {
+        @media (max-height: 800px) {
           margin-top: 2rem;
         }
       }
