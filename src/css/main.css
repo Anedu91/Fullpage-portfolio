@@ -707,8 +707,13 @@ body {
 }
 .container--row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+}
+@media (min-width: 767px) {
+  .container--row {
+    flex-direction: row;
+  }
 }
 .container--column {
   display: flex;
