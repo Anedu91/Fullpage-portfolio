@@ -1,6 +1,5 @@
 .social {
   list-style: none;
-  position: absolute;
   padding: 0.75rem 1.25rem;
   border: 3px solid $black-color;
   border-radius: 1.875rem;
@@ -8,6 +7,7 @@
   align-items: center;
   top: unset;
   bottom: 2.2rem;
+  margin-right: auto;
 
   @include respond-below(xxxs) {
     bottom: 1rem;
@@ -16,6 +16,8 @@
     }
   }
   @include respond-above(sm) {
+    position: absolute;
+    left: 3.75vw;
     top: 50%;
     bottom: unset;
     transform: translate3d(0, -50%, 0);

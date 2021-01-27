@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fullpage.js": "^3.0.9"
+    "fullpage.js": "^3.0.9",
+    "normalize.css": "^8.0.1"
   }
 }

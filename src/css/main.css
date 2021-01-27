@@ -690,7 +690,7 @@ body {
   }
 }
 .container {
-  padding: 3rem 5.75vw;
+  padding: 3rem 5.75vw 2.2rem;
   height: 100%;
   position: relative;
   z-index: 10;
@@ -1039,7 +1039,6 @@ body {
 
 .social {
   list-style: none;
-  position: absolute;
   padding: 0.75rem 1.25rem;
   border: 3px solid #0d0d0d;
   border-radius: 1.875rem;
@@ -1047,6 +1046,7 @@ body {
   align-items: center;
   top: unset;
   bottom: 2.2rem;
+  margin-right: auto;
 }
 @media (max-width: 361px) {
   .social {
@@ -1060,6 +1060,8 @@ body {
 }
 @media (min-width: 767px) {
   .social {
+    position: absolute;
+    left: 3.75vw;
     top: 50%;
     bottom: unset;
     transform: translate3d(0, -50%, 0);
