@@ -10,6 +10,9 @@
   }
   @include respond-below(xxxs) {
     margin-top: 1rem;
+    @media (min-height: 644px) {
+      margin-top: 3rem;
+    }
   }
   @include respond-above(sm) {
     padding: 1.875rem 4.75rem;

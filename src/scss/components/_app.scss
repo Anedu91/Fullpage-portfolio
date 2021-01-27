@@ -9,7 +9,7 @@
     margin-top: 5rem;
     @include respond-below(xxs) {
       @media (max-height: 667px) {
-        margin: auto;
+        // margin: auto;
       }
     }
     @include respond-below(xxxs) {
@@ -236,6 +236,9 @@
     @include respond-below(xxxs) {
       margin-top: 0.375rem;
       grid-row-gap: 0.5rem;
+      @media (min-height: 644px) {
+        margin-top: 2rem;
+      }
     }
 
     @include respond-above(md) {

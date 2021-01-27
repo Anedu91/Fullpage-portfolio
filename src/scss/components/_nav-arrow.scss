@@ -12,7 +12,7 @@
   border-radius: 50%;
   border: 3px solid $gray-color;
   transform: translate3d(0, -50%, 0);
-  transition: 0.5 all;
+  transition: 0.5s all;
   @include respond-below(xxxs) {
     width: 2.5rem;
     height: 2.5rem;
@@ -46,7 +46,7 @@
         background-size: 45%;
       }
       @include respond-below(xxxs) {
-        background-size: 70%;
+        background-size: 50%;
       }
     }
     &:hover {
@@ -73,7 +73,7 @@
         background-size: 45%;
       }
       @include respond-below(xxxs) {
-        background-size: 70%;
+        background-size: 50%;
       }
     }
     &:hover {

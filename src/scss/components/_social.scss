@@ -6,7 +6,9 @@
   border-radius: 1.875rem;
   display: flex;
   align-items: center;
+  top: unset;
   bottom: 2.2rem;
+
   @include respond-below(xxxs) {
     bottom: 1rem;
     @media (min-height: 570px) {
