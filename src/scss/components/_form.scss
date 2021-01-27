@@ -1,0 +1,95 @@
+.form {
+  background: $black-color;
+  padding: 1rem 1.75rem;
+  border-radius: 3.125rem;
+  margin-top: 2.25rem;
+  @include respond-below(xxs) {
+    @media (max-height: 667px) {
+      margin-top: 1rem;
+    }
+  }
+  @include respond-below(xxxs) {
+    margin-top: 1rem;
+  }
+  @include respond-above(sm) {
+    padding: 1.875rem 4.75rem;
+  }
+  &__group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+    @include respond-below(xxxs) {
+      padding: 0.75rem 0;
+      margin-bottom: 0.75rem;
+    }
+    @include respond-above(sm) {
+      padding: 1.5rem 0;
+    }
+    @include respond-above(md) {
+      padding: 1rem 0;
+      @media (min-height: 1200px) {
+        padding: 1.5rem 0;
+      }
+    }
+    @include respond-above(lg) {
+      @media (max-height: 800px) {
+        padding: 1rem 0;
+      }
+    }
+    &--btn {
+      padding: 0;
+      margin-top: 3rem;
+      margin-bottom: 0;
+      align-items: center;
+      @include respond-below(xxs) {
+        @media (max-height: 667px) {
+          margin-top: 1.5rem;
+        }
+      }
+      @include respond-below(xxxs) {
+        margin-top: 1.5rem;
+      }
+      @include respond-above(md) {
+        margin-top: 2rem;
+        @media (min-height: 1200px) {
+          margin-top: 3rem;
+        }
+      }
+      @include respond-above(lg) {
+        @media (max-height: 800px) {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+  &__label {
+    position: absolute;
+    top: 0;
+    color: $white-color;
+    transform: translateY(60%);
+    transition: all 0.5s;
+    @include respond-below(xxxs) {
+      font-size: 0.8rem;
+    }
+  }
+  &__input {
+    border: none;
+    border-bottom: 3px solid $white-color;
+    background: none;
+    font-size: 1.2rem;
+    color: $white-color;
+    font-family: inherit;
+    padding: 0 0.5rem;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__input:focus + &__label {
+    transform: translateY(-60%);
+  }
+  &__input:not(:placeholder-shown) + &__label {
+    transform: translateY(-60%);
+  }
+}

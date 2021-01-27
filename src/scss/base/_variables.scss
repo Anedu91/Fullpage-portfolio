@@ -1,0 +1,64 @@
+//Media queries
+$breakpoints: (
+  xxxs: 360px,
+  // 360px
+  xxs: 420px,
+  //420px
+  xs: 576px,
+  // 576px
+  sm: 768px,
+  // 768px
+  md: 992px,
+  // 992px
+  md-large: 1100px,
+  // 1100px
+  lg: 1100px,
+  // 1200px
+  xl: 1440px,
+  // 1440px
+  xxl: 1600px // 1600px,,,,,,
+);
+
+@mixin respond-below($breakpoint) {
+  // If the breakpoint exists in the map.
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Get the breakpoint value.
+    $breakpoint-value: map-get(
+      $breakpoints,
+      $breakpoint
+    ); // Write the media query.
+    @media (max-width: ($breakpoint-value + 1)) {
+      @content;
+    }
+    // If the breakpoint doesn't exist in the map.
+  } @else {
+    // Log a warning.
+    @warn "Invalid breakpoint: #{$breakpoint}.";
+  }
+}
+
+@mixin respond-above($breakpoint) {
+  // If the breakpoint exists in the map.
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Get the breakpoint value.
+    $breakpoint-value: map-get(
+      $breakpoints,
+      $breakpoint
+    ); // Write the media query.
+    @media (min-width: ($breakpoint-value - 1)) {
+      @content;
+    }
+    // If the breakpoint doesn't exist in the map.
+  } @else {
+    // Log a warning.
+    @warn "Invalid breakpoint: #{$breakpoint}.";
+  }
+}
+/*COLORS*/
+$gray-color: #b4b4b4;
+$black-color: #0d0d0d;
+
+$white-color: #f5f5f5;
+
+/*Font family*/
+$primary-font: "Poppins", sans-serif;

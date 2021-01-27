@@ -1,0 +1,25 @@
+.header {
+  position: fixed;
+  top: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  @include respond-below(xxxs) {
+    top: 1rem;
+  }
+  @include respond-above(sm) {
+    top: 4rem;
+    left: 4rem;
+    transform: translateX(0);
+  }
+  @include respond-above(lg) {
+    top: 8vh;
+    left: calc(3.75vw);
+  }
+
+  &__logo {
+    max-width: 1.875rem;
+    @include respond-above(sm) {
+      max-width: 100%;
+    }
+  }
+}

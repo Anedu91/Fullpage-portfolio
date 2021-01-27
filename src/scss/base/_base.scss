@@ -1,0 +1,43 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 100%;
+}
+body {
+  box-sizing: border-box;
+  cursor: none;
+}
+a {
+  cursor: none;
+}
+button {
+  cursor: none;
+}
+.landscape {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 1024px) and (orientation: landscape) {
+  .app {
+    display: none;
+  }
+  .header {
+    display: none;
+  }
+  .nav {
+    visibility: hidden;
+  }
+  .landscape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $black-color;
+    color: $white-color;
+    text-align: center;
+    height: 100vh;
+  }
+}

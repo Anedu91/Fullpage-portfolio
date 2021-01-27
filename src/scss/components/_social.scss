@@ -1,0 +1,44 @@
+.social {
+  list-style: none;
+  position: absolute;
+  padding: 0.75rem 1.25rem;
+  border: 3px solid $black-color;
+  border-radius: 1.875rem;
+  display: flex;
+  align-items: center;
+  bottom: 2.2rem;
+  @include respond-below(xxxs) {
+    bottom: 1rem;
+    @media (min-height: 570px) {
+      bottom: 1.8rem;
+    }
+  }
+  @include respond-above(sm) {
+    top: 50%;
+    bottom: unset;
+    transform: translate3d(0, -50%, 0);
+    flex-direction: column;
+    padding: 1.875rem 1rem;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 1.75rem;
+      @include respond-above(sm) {
+        margin-bottom: 1.75rem;
+        margin-right: 0;
+      }
+    }
+  }
+  &__icon {
+    width: 1.125rem;
+    height: 1.125rem;
+    transition: 0.5s all;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+  &__link:hover &__icon {
+    transform: scale(1.2);
+  }
+}

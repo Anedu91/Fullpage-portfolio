@@ -1,0 +1,28 @@
+#circle{
+  display: none;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: rgba($gray-color,.55);
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  pointer-events: none;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  border: 2px solid $black-color;
+  @include respond-above(lg){
+    display: block
+  }
+}
+#circle.animation{
+  animation-name: grow;
+}
+@keyframes grow {
+  0%, 100% {
+    border: 2px solid rgba($gray-color,.55);
+  }
+  50%{
+    border: 10px solid rgba($gray-color,.55);
+  }
+}
