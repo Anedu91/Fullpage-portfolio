@@ -1,5 +1,5 @@
 .container {
-  padding: 3rem 5.75vw 2.2rem;
+  padding: 3rem 5.75vw;
   height: 100%;
   position: relative;
   z-index: 10;
@@ -13,11 +13,8 @@
   }
   &--row {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    @include respond-above(sm) {
-      flex-direction: row;
-    }
   }
   &--column {
     display: flex;
@@ -25,34 +22,36 @@
     align-items: center;
   }
 
-  &.animation-right {
+  &.animation-right{
     animation-name: appear-right;
     animation-duration: 1s;
     animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
-  &.animation-left {
+  &.animation-left{
     animation-name: appear-left;
     animation-duration: 1s;
     animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
 }
 
-@keyframes appear-right {
-  0% {
+@keyframes appear-right{
+  0%{
     transform: translateX(20%);
     opacity: 0;
   }
-  100% {
+  100%{
     opacity: 100%;
     transform: translateX(0);
   }
+  
+  
 }
-@keyframes appear-left {
-  0% {
+@keyframes appear-left{
+  0%{
     transform: translateX(-20%);
     opacity: 0;
   }
-  100% {
+  100%{
     opacity: 100%;
     transform: translateX(0);
   }

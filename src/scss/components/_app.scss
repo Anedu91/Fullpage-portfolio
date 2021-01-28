@@ -394,3 +394,17 @@
     }
   }
 }
+
+@include respond-below(sm) {
+  .home__article {
+    margin-top: 2rem;
+  }
+
+  .social {
+    position: fixed !important;
+  }
+
+  .fp-tableCell {
+    vertical-align: top;
+  }
+}
