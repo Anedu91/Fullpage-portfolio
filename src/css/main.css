@@ -11,7 +11,7 @@
 }
 
 html {
-  font-size: 100%;
+  font-size: 16px;
 }
 
 body {
@@ -336,8 +336,8 @@ body {
 }
 .skills__circle {
   position: relative;
-  width: 53.75vw;
-  height: 53.75vw;
+  width: 10.75rem;
+  height: 10.75rem;
   z-index: 1000;
 }
 @media (min-width: 767px) {
@@ -386,7 +386,7 @@ body {
   transform: translate3d(-50%, -50%, 0);
 }
 .skills__number h4 {
-  font-size: 3.125rem;
+  font-size: 2.525rem;
   line-height: 1.5;
   font-weight: 700;
 }
@@ -457,8 +457,8 @@ body {
 .portfolio__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
+  column-gap: 1rem;
+  row-gap: 1rem;
   margin-top: 2.375rem;
 }
 @media (max-width: 421px) {
@@ -475,7 +475,7 @@ body {
 @media (max-width: 361px) {
   .portfolio__grid {
     margin-top: 0.375rem;
-    grid-row-gap: 0.5rem;
+    row-gap: 0.5rem;
   }
 }
 @media (max-width: 361px) and (min-height: 600px) {
@@ -487,8 +487,8 @@ body {
 @media (min-width: 991px) {
   .portfolio__grid {
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 3.6vw;
-    grid-row-gap: 2.5vh;
+    column-gap: 3.6vw;
+    row-gap: 2.5vh;
   }
 }
 @media (min-width: 991px) and (min-height: 1200px) {
@@ -533,18 +533,6 @@ body {
   height: 4rem;
   background: #f5f5f5;
   border-radius: 0.6rem;
-}
-@media (max-width: 421px) and (max-height: 667px) {
-  .portfolio__image {
-    width: 4rem;
-    height: 4rem;
-  }
-}
-@media (max-width: 361px) {
-  .portfolio__image {
-    height: 4rem;
-    width: 4rem;
-  }
 }
 @media (min-width: 767px) {
   .portfolio__image {
@@ -681,11 +669,6 @@ body {
   }
 }
 
-@media (max-width: 993px) {
-  .fp-tableCell {
-    vertical-align: top;
-  }
-}
 #circle {
   display: none;
   position: absolute;

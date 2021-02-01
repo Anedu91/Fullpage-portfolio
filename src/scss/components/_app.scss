@@ -134,8 +134,8 @@
   }
   &__circle {
     position: relative;
-    width: 53.75vw;
-    height: 53.75vw;
+    width: 10.75rem;
+    height: 10.75rem;
     z-index: 1000;
     @include respond-above(sm) {
       width: 43.75vw;
@@ -175,7 +175,7 @@
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
     h4 {
-      font-size: 3.125rem;
+      font-size: 2.525rem;
       line-height: 1.5;
       font-weight: 700;
       @include respond-above(sm) {
@@ -228,8 +228,8 @@
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
+    column-gap: 1rem;
+    row-gap: 1rem;
     margin-top: 2.375rem;
     @include respond-below(xxs) {
       margin-top: auto;
@@ -240,7 +240,7 @@
     }
     @include respond-below(xxxs) {
       margin-top: 0.375rem;
-      grid-row-gap: 0.5rem;
+      row-gap: 0.5rem;
       @media (min-height: 600px) {
         margin-top: auto;
         margin-bottom: auto;
@@ -249,8 +249,8 @@
 
     @include respond-above(md) {
       grid-template-columns: repeat(4, 1fr);
-      grid-column-gap: 3.6vw;
-      grid-row-gap: 2.5vh;
+      column-gap: 3.6vw;
+      row-gap: 2.5vh;
       @media (min-height: 1200px) {
         grid-template-columns: repeat(3, 1fr);
       }
@@ -287,16 +287,16 @@
     height: 4rem;
     background: $white-color;
     border-radius: 0.6rem;
-    @include respond-below(xxs) {
-      @media (max-height: 667px) {
-        width: 4rem;
-        height: 4rem;
-      }
-    }
-    @include respond-below(xxxs) {
-      height: 4rem;
-      width: 4rem;
-    }
+    // @include respond-below(xxs) {
+    //   @media (max-height: 667px) {
+    //     width: 4rem;
+    //     height: 4rem;
+    //   }
+    // }
+    // @include respond-below(xxxs) {
+    //   height: 4rem;
+    //   width: 4rem;
+    // }
     @include respond-above(sm) {
       width: 8.125rem;
       height: 8.125rem;
@@ -401,8 +401,8 @@
   }
 }
 
-@include respond-below(md) {
-  .fp-tableCell {
-    vertical-align: top;
-  }
-}
+// @include respond-below(md) {
+//   .fp-tableCell {
+//     vertical-align: top;
+//   }
+// }
