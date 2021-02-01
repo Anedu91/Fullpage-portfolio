@@ -283,10 +283,12 @@
     }
   }
   &__image {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     background: $white-color;
     border-radius: 0.6rem;
+    display: block;
+    margin: auto;
     // @include respond-below(xxs) {
     //   @media (max-height: 667px) {
     //     width: 4rem;
