@@ -24,7 +24,7 @@ html.fp-enabled,
   box-sizing: border-box;
 }
 .fp-slide {
-  float: left;
+  /* float: left; */
 }
 .fp-slide,
 .fp-slidesContainer {
@@ -41,18 +41,18 @@ html.fp-enabled,
 }
 .fp-section.fp-table,
 .fp-slide.fp-table {
-  display: table;
-  table-layout: fixed;
+  /* display: table; */
+  /* table-layout: fixed; */
   width: 100%;
 }
 .fp-tableCell {
   /* display: table-cell; */
-  vertical-align: middle;
+  /* vertical-align: middle; */
   width: 100%;
   height: 100%;
 }
 .fp-slidesContainer {
-  float: left;
+  /* float: left; */
   position: relative;
 }
 .fp-scrollable {
