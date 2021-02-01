@@ -1,21 +1,14 @@
 .social {
   list-style: none;
-  position: absolute;
+  
   padding: 0.75rem 1.25rem;
   border: 3px solid $black-color;
   border-radius: 1.875rem;
   display: flex;
   align-items: center;
-  top: unset;
-  bottom: 2.2rem;
-
-  @include respond-below(xxxs) {
-    bottom: 1rem;
-    @media (min-height: 570px) {
-      bottom: 1.8rem;
-    }
-  }
+  transform: translateY(1.3rem);
   @include respond-above(sm) {
+    position: absolute;
     top: 50%;
     bottom: unset;
     transform: translate3d(0, -50%, 0);

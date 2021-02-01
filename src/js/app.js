@@ -7,6 +7,9 @@ const FullPage = new fullpage("#fullpage", {
   slidesNavigation: false,
   loopHorizontal: false,
   fixedElements: ".header, .nav, #circle",
+  responsiveWidth: 0,
+	responsiveHeight: 0,
+	responsiveSlides: false,
 
   onSlideLeave: function (section, origin, destination, direction) {
     const nextContainer = document

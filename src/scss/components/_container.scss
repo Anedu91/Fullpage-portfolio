@@ -13,8 +13,10 @@
   }
   &--row {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
   }
   &--column {
     display: flex;
