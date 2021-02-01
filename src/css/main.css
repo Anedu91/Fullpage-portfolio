@@ -178,7 +178,7 @@ body {
 .home__article {
   max-width: 53.125rem;
   margin-bottom: auto;
-  margin-top: 5rem;
+  margin-top: auto;
 }
 @media (max-width: 361px) {
   .home__article {
@@ -336,8 +336,8 @@ body {
 }
 .skills__circle {
   position: relative;
-  width: 10.75rem;
-  height: 10.75rem;
+  width: 50.75vw;
+  height: 50.75vw;
   z-index: 1000;
 }
 @media (min-width: 767px) {
@@ -386,7 +386,7 @@ body {
   transform: translate3d(-50%, -50%, 0);
 }
 .skills__number h4 {
-  font-size: 2.525rem;
+  font-size: 3.125rem;
   line-height: 1.5;
   font-weight: 700;
 }

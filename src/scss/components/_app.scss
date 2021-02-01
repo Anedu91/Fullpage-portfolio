@@ -6,7 +6,7 @@
   &__article {
     max-width: 53.125rem;
     margin-bottom: auto;
-    margin-top: 5rem;
+    margin-top: auto;
     @include respond-below(xxs) {
       @media (max-height: 667px) {
         // margin: auto;
@@ -134,8 +134,8 @@
   }
   &__circle {
     position: relative;
-    width: 10.75rem;
-    height: 10.75rem;
+    width: 50.75vw;
+    height: 50.75vw;
     z-index: 1000;
     @include respond-above(sm) {
       width: 43.75vw;
@@ -175,7 +175,7 @@
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
     h4 {
-      font-size: 2.525rem;
+      font-size: 3.125rem;
       line-height: 1.5;
       font-weight: 700;
       @include respond-above(sm) {
