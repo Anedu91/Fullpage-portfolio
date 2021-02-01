@@ -256,7 +256,8 @@
                     <strong>Location:</strong>&nbsp; Barcelona, Spain
                   </li>
                 </ul>
-                <form action="" class="form">
+                <form action="" method="POST" class="form" id="form">
+                  <span class="form__message">Message send.</span>
                   <div class="form__group">
                     <input
                       type="text"
@@ -264,6 +265,7 @@
                       id="name"
                       required
                       placeholder=" "
+                      name="name"
                     />
                     <label for="name" class="form__label">Name</label>
                   </div>
@@ -274,6 +276,7 @@
                       id="email"
                       required
                       placeholder=" "
+                      name="email"
                     />
                     <label for="email" class="form__label">Email</label>
                   </div>
@@ -284,11 +287,12 @@
                       id="message"
                       required
                       placeholder=" "
+                      name="message"
                     />
                     <label for="message" class="form__label">Message</label>
                   </div>
                   <div class="form__group form__group--btn">
-                    <button class="btn btn--contact">send</button>
+                    <button type="submit" class="btn btn--contact">send</button>
                   </div>
                 </form>
               </div>
@@ -301,6 +305,7 @@
       <h1>Please turn your device</h1>
     </div>
     <script src="js/vendors/fullpage.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

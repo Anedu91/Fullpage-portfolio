@@ -95,4 +95,13 @@
   &__input:not(:placeholder-shown) + &__label {
     transform: translateY(-60%);
   }
+  &__message {
+    display: block;
+    color: $white-color;
+    text-align: center;
+    font-weight: 700;
+    &.none {
+      display: none;
+    }
+  }
 }
