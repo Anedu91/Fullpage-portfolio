@@ -1060,7 +1060,7 @@ body {
   border-radius: 1.875rem;
   display: flex;
   align-items: center;
-  transform: translateY(1.3rem);
+  transform: translateY(0.5rem);
 }
 @media (min-width: 767px) {
   .social {
