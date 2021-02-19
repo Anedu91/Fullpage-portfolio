@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, height=device-height, initial-scale=0.9, user-scalable=0, minimum-scale=0.9, maximum-scale=0.9"
     />
-    <title>Marc Portfolio</title>
+    <title>marc banchsux</title>
     <link rel="stylesheet" href="css/vendors/fullpage.min.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
@@ -28,6 +28,7 @@
       <div id="circle"></div>
       <main id="fullpage">
         <section class="section">
+          <!------------------------- HOME ---------------------->
           <div class="slide home" data-anchor="home">
             <div class="container container--row">
               <article class="home__article">
@@ -76,6 +77,7 @@
               </ul>
             </div>
           </div>
+          <!------------------------- SKILLS ---------------------->
           <div class="slide skills" data-anchor="skills">
             <div class="container container--column">
               <h2 class="heading-2 heading-container">skills.</h2>
@@ -133,6 +135,8 @@
               </div>
             </div>
           </div>
+
+          <!------------------------- PORTFOLIO ---------------------->
           <div class="slide portfolio" data-anchor="portfolio">
             <div class="container container--column">
               <h2 class="heading-2 heading-container">portfolio.</h2>
@@ -142,7 +146,11 @@
                   this page, fell free to explore.
                 </p>
                 <div class="portfolio__grid">
-                  <a href="#" class="portfolio__item">
+                  <a
+                    href="Progrecity.html"
+                    target="blank"
+                    class="portfolio__item"
+                  >
                     <figure class="portfolio__figure">
                       <img
                         src="images/portfolio.jpg"
@@ -234,6 +242,7 @@
               </div>
             </div>
           </div>
+          <!------------------------- CONTACT ---------------------->
           <div class="slide contact" data-anchor="contact">
             <div class="container container--column">
               <h2 class="heading-2 heading-container">contact.</h2>
@@ -257,7 +266,7 @@
                   </li>
                 </ul>
                 <form action="" method="POST" class="form" id="form">
-                  <span class="form__message">Message send.</span>
+                  <span class="form__message">Message sent.</span>
                   <div class="form__group">
                     <input
                       type="text"
@@ -307,5 +316,22 @@
     <script src="js/vendors/fullpage.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/app.js"></script>
+    <script>
+      const $form = document.querySelector("#form");
+
+      const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const myForm = e.target;
+        const formData = new FormData(myForm);
+
+        fetch("post.php", {
+          method: "POST",
+          body: formData,
+        })
+          .then((res) => res.json())
+          .then((data) => console.log(data));
+      };
+    </script>
   </body>
 </html>

@@ -78,23 +78,6 @@ const onMouseMove = (e) => {
 };
 
 /*HANDLE FORM */
-const $form = document.querySelector("#form");
-
-const handleSubmit = (e) => {
-  e.preventDefault();
-
-  const myForm = e.target;
-  const formData = new FormData(myForm);
-  Email.send({
-    Host: "smtp.gmail.com",
-    Username: "contact003399@gmail.com",
-    Password: "wao.com.pk",
-    To: "angel.e.diaz.b@gmail.com",
-    From: "angel.e.diaz.b@gmail.com.com",
-    Subject: "This is the subject",
-    Body: "And this is the body",
-  }).then((message) => alert(message));
-};
 
 document.addEventListener("DOMContentLoaded", function () {
   gettingProgress(actualButton);
