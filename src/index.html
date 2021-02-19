@@ -327,6 +327,7 @@
 
         fetch("post.php", {
           method: "POST",
+          credentials: "same-origin",
           body: formData,
         })
           .then((res) => res.json())
