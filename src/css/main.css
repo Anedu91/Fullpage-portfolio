@@ -675,14 +675,14 @@ body {
 #circle {
   display: none;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   background: rgba(180, 180, 180, 0.55);
   transform: translate(-50%, -50%);
   z-index: 1;
   pointer-events: none;
-  animation-duration: 0.3s;
+  animation-duration: 1s;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   border: 2px solid #0d0d0d;
 }
@@ -923,7 +923,7 @@ body {
 }
 @media (min-width: 767px) {
   .header__logo {
-    max-width: 75%;
+    max-width: 100%;
   }
 }
 
@@ -1019,7 +1019,7 @@ body {
   background-position: center;
   border-radius: 50%;
   transform: rotate(180deg);
-  transition: 0.3s all;
+  transition: 0.5s all;
 }
 @media (min-width: 767px) {
   .fp-controlArrow.fp-prev:before {
@@ -1103,18 +1103,4 @@ body {
 }
 .social__link:hover .social__icon {
   transform: scale(1.2);
-}
-
-.case-1 {
-  height: 80%; 
-  width: 80%;
-  align-items: center;
-  margin-left: 12%;
-}
-
-@media (min-width: 99px) {
-  .case-1 {
-  height: 100%; 
-  width: 80%; 
-  }
 }
