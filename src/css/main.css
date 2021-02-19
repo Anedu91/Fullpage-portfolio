@@ -490,6 +490,8 @@ body {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 3.6vw;
     row-gap: 2.5vh;
+    grid-column-gap: 3.6vw;
+    grid-row-gap: 2.5vh;
   }
 }
 @media (min-width: 991px) and (min-height: 1200px) {
@@ -672,6 +674,11 @@ body {
   }
 }
 
+@media (max-width: 993px) {
+  .fp-tableCell {
+    vertical-align: top;
+  }
+}
 #circle {
   display: none;
   position: absolute;
@@ -697,7 +704,8 @@ body {
 }
 
 @keyframes grow {
-  0%, 100% {
+  0%,
+  100% {
     border: 2px solid rgba(180, 180, 180, 0.55);
   }
   50% {
