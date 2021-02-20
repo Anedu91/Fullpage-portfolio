@@ -316,23 +316,5 @@
     <script src="js/vendors/fullpage.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/app.js"></script>
-    <script>
-      const $form = document.querySelector("#form");
-
-      const handleSubmit = (e) => {
-        e.preventDefault();
-
-        const myForm = e.target;
-        const formData = new FormData(myForm);
-
-        fetch("post.php", {
-          method: "GET",
-          credentials: "same-origin",
-          body: formData,
-        })
-          .then((res) => res.json())
-          .then((data) => console.log(data));
-      };
-    </script>
   </body>
 </html>

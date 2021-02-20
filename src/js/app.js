@@ -78,7 +78,22 @@ const onMouseMove = (e) => {
 };
 
 /*HANDLE FORM */
+const $form = document.querySelector("#form");
 
+const handleSubmit = (e) => {
+  e.preventDefault();
+
+  const myForm = e.target;
+  const formData = new FormData(myForm);
+
+  fetch("post.php", {
+    method: "POST",
+    credentials: "same-origin",
+    body: formData,
+  })
+    .then((res) => res.json())
+    .then((data) => console.log(data));
+};
 document.addEventListener("DOMContentLoaded", function () {
   gettingProgress(actualButton);
 
